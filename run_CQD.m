@@ -5,7 +5,7 @@ gpuidx = [1];
 
 % Select dataset
 % For example, you can do distillation:
-% from 'cub' to 'cubcrop' for localization
+% from 'cubcrop' to 'cub' for localization
 % from 'cubcrop' to 'cublowres' for resolution
 % from 'cubcrop' to 'cubedges' for edges
 % from 'cubcrop' to 'cubdistort' for distortion
@@ -14,8 +14,8 @@ gpuidx = [1];
 % from 'cars' to 'carsedges' for edges
 % Above are the experiments in Table 1 in the paper.
 dirName = 'cub-localization';% Name of the directory to save the results
-dataset_A = 'cub';% Dataset distilling from
-dataset_B = 'cubcrop';% Dataset distilling to
+dataset_A = 'cubcrop';% Dataset distilling from
+dataset_B = 'cub';% Dataset distilling to
 if ~exist(['data/',dirName], 'dir')
     mkdir(['data/',dirName])
 end
